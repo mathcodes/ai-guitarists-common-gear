@@ -8,7 +8,6 @@ Using OpenAI's DALLE and Chat-GPT to create recipes given a list of recipes. Enj
   - [WORKFLOW:](#workflow)
 - [Tutorial:](#tutorial)
   - [Set up API key](#set-up-api-key)
-  - [Generate a recipe](#generate-a-recipe)
   - [Make Python List Compatible with Prompt Engine](#make-python-list-compatible-with-prompt-engine)
   - [First Line of Prompt:](#first-line-of-prompt)
   - [Extend the prompt](#extend-the-prompt)
@@ -30,18 +29,10 @@ Create a prompt that generates a recipe from a list of ingredients.
 import os import openai
 openai.api_key = os.getenv('OPENAI_APIKEY')
 ```
-## Generate a recipe
-Define a function `create_dish_prompt`, which will accept a Python list of ingredients, and return the prompt.
-
-```python
-def create_guitarist_prompt (list_of_gear):
-    return prompt
-```
-
-**NOTE: WE CANNOT PASS A PYTHON LIST IN AS A PROMPT**
 
 ## Make Python List Compatible with Prompt Engine
 Since we have a list, for example [ Tube Screamer, Fender, Gibson ], we can call this g for gear, and then use JOIN to connect this into a string. We will use a delimiter to join/separate the items, say a ‘, ’, then go ahead and JOIN:
+**NOTE: WE CANNOT PASS A PYTHON LIST IN AS A PROMPT**
 
 ```python
 g = ['ibanez', 'fender', 'gibson']
