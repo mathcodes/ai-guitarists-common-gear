@@ -1,11 +1,10 @@
-# AI-Recipe-Maker
-Using OpenAI's DALLE and Chat-GPT to create recipes given a list of recipes. Enjoy! For this project, I will be providing a complete walkthrough of the code and how to use it, and eventually I'll get it up on YouTube as well!!!
+# AI - Guitarists Common Gear
+Using OpenAI's DALLE and Chat-GPT to create a list of gear used by famous guitarists that match the gear you enter. Enjoy! For this project, I will be providing a complete walkthrough of the code and how to use it, and eventually I'll get it up on YouTube as well!!!
 
 ## Table of Contents
-- [AI-Recipe-Maker](#ai-recipe-maker)
-  - [Table of Contents](#table-of-contents)
-  - [TASK:](#task)
-  - [WORKFLOW:](#workflow)
+
+- [TASK:](#task)
+- [WORKFLOW:](#workflow)
 - [Tutorial:](#tutorial)
   - [Set up API key](#set-up-api-key)
   - [Make Python List Compatible with Prompt Engine](#make-python-list-compatible-with-prompt-engine)
@@ -14,10 +13,10 @@ Using OpenAI's DALLE and Chat-GPT to create recipes given a list of recipes. Enj
   - [Run create\_guitarist\_prompt](#run-create_guitarist_prompt)
   - [Create a function to call the API](#create-a-function-to-call-the-api)
 
-## TASK:
+# TASK:
 Create a prompt that generates a recipe from a list of ingredients.
 
-## WORKFLOW:
+# WORKFLOW:
  - User gives list of guitar gear
  - Prompt will ask the completion engine (da-vinci) to return a 3 guitarists who use that gear
  - We then generate an image url for each guitarist
